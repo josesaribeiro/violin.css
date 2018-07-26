@@ -1,10 +1,4 @@
-<div class="inv-input-file__container">
-  {{> @label}}
-  <div class="inv-input-file">
-    <button class="inv-input-file__btn {{input-file.modifier}}">
-      {{input-file.button-text}} {{> @input-icon}}
-    </button>
-    <input type="file" {{ternary input-file.disabled "disabled" "" }} /> {{> @clear-input}}
-  </div>
-  {{> @form-text}}
+<div class="inv-input-file">
+  <label class="inv-input-file__label" for='element'>Selecionar um arquivo &#187;</label>
+  <input class="inv-input-file__input" id='element' type='file'>
 </div>
